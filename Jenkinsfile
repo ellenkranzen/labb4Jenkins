@@ -57,7 +57,7 @@ pipeline {
         }
         stage('CrossBrowserTesting') {
             steps {
-                sh 'curl --user ellen.kranzen@iths.se:u2578f8afad30827 --data "browser=Mac10.11|Safari9|1024x768&browser=Win10|Edge20|800x600&url=http://www.google.com" https://crossbrowsertesting.com/api/v3/screenshots/'
+                sh 'curl --user ellen.kranzen@iths.se:u2578f8afad30827 --data "browser=Mac10.11|Safari9|1024x768&browsers=Win10|Edge20|800x600&url=http://www.google.com" https://crossbrowsertesting.com/api/v3/screenshots/'
             }
         }
     }
