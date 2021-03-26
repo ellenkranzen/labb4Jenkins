@@ -57,7 +57,7 @@ pipeline {
         }
         stage('CrossBrowserTesting') {
             steps {
-                sh 'cbt ScreenShot.py' 
+                sh 'python ScreenShot.py' 
             }
         }
     }
