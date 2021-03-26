@@ -1,3 +1,4 @@
+import requests
 import json
 import time
 from requests import post, get
