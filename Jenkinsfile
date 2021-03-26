@@ -57,9 +57,7 @@ pipeline {
         }
         stage('CrossBrowserTesting') {
             steps {
-                cbt(credentialsId: 'ellen.kranzen@iths.se:u2578f8afad30827', useLocalTunnel: true, useTestResults: true) {
-                     cbtScreenshotsTest browserList: 'EK', url: 'http://www.google.com'
-                }
+                sh 'python ScreenShot.py' 
             }
         }
     }
