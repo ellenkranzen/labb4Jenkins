@@ -8,7 +8,7 @@ authkey = "u2578f8afad30827"
 
 #Screenshot parameters
 test_url = "https://google.com/"
-devices_list = "Pixel2-And90|MblChrome74, iPhoneXRSim|MblSafari12.0, Mac10.14|FF67, Win10|Chrome75X64"
+devices_list = "Mac10.14|FF67, Win10|Chrome75X64"
 
 #Send the request to CrossBrowserTesting to start the test
 request = post("https://"+user+":"+authkey+"@crossbrowsertesting.com/api/v3/screenshots/?browsers="+devices_list+"&url="+test_url)
