@@ -33,7 +33,7 @@ pipeline {
         }
         stage('CrossBrowserTesting') {
             steps {
-                sh 'python ScreenShotCBT.py'
+                cbtScreenshotsTest browserList: 'Popular Browsers', loginProfile: 'ellen.kranzen@iths.se:u2578f8afad30827', url: 'http://google.com'
             }
         }
     }
